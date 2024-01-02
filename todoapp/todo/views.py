@@ -50,4 +50,14 @@ def todo_undone(request, jw):
     todo.completed = False
     todo.save()
     return redirect('todo_done_list')
+
+def todo_delete1(request, jw):
+    todo = Todo.objects.get(id=jw)
+    todo.delete()
+    return redirect('todo_done_list')
+
+def todo_delete2(request, jw):
+    todo = Todo.objects.get(id=jw)
+    todo.delete()
+    return redirect('todo_list')
 # Create your views here.

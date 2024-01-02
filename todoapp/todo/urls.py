@@ -8,5 +8,7 @@ urlpatterns = [
     path('<int:jw>/edit/', views.todo_edit, name='todo_edit'),
     path('done/', views.todo_done_list, name='todo_done_list'),
     path('done/<int:jw>', views.todo_done, name='todo_done'),
-    path('undone/<int:jw>', views.todo_undone, name='todo_undone')
+    path('undone/<int:jw>', views.todo_undone, name='todo_undone'),
+    path('delete1/<int:jw>', views.todo_delete1, name='todo_delete1'),
+    path('delete2/<int:jw>', views.todo_delete2, name='todo_delete2')
 ]

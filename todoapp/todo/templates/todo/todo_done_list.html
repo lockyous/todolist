@@ -27,6 +27,7 @@
         {% endif %} 
         <div style="float:right">
           <a href="{% url 'todo_undone' todo.id %}" class="btn btn-danger">되돌리기</a>
+          <a href="{% url 'todo_delete1' todo.id %}" class="btn btn-danger">삭제</a>
           <a href="{% url 'todo_edit' todo.id %}" class="btn btn-outline-primary">수정하기</a>
         </div>
       </li>
